@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Output</title>
+</head>
+<body>
+<!--Bai tap 1: Hien thi ket qua su dung ham alert()-->
+<button onclick="showMessage();" type="button">Click Me!</button>
+<script>
+    function showMessage() {
+        alert("Hello");
+    }
+</script>
+<!--Bai tap 2: Hien thi ket qua su dung the HTML-->
+<div id="messageDiv"></div>
+<button onclick="showMessage2()" type="button">Click Me2!</button>
+<script>
+    function showMessage2() {
+        document.getElementById("messageDiv").innerHTML = "Hello inner HTML"
+    }
+</script>
+<!--Bai tap 3: Hien thi ket qua su dung ham document.write-->
+<button onclick="showMessage3()" type="button">Click Me3!</button>
+<script>
+    function showMessage3() {
+        document.write("Hello");
+    }
+</script>
+<!--Bai tap 4: Hien thi ket qua su dung ham console.log-->
+<button onclick="showMessage4()" type="button">Click Me4!</button>
+<script>
+    function showMessage4() {
+        console.log("Hello");
+    }
+</script>
+</body>
+</html>
